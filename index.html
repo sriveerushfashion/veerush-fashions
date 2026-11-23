@@ -4111,7 +4111,30 @@ background:
     }
 }
 
+/* MOBILE FIX — POMELLI CAMPAIGN CARDS */
+@media screen and (max-width: 750px) {
+    .pomelli-showcase .pomelli-campaign-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
 
+    .pomelli-showcase {
+        width: 96%;
+        padding: 18px 10px;
+        margin: 25px auto;
+    }
+
+    .pomelli-showcase .pomelli-campaign-card {
+        min-width: 0;
+    }
+
+    .pomelli-showcase .pomelli-campaign-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
 
 </style>
 
