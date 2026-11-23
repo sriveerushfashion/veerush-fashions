@@ -4044,6 +4044,75 @@ background:
 }
 
 
+/* POMELLI PREMIUM CAMPAIGN SECTION */
+.pomelli-showcase {
+    width: min(1400px, 94%);
+    margin: 45px auto;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #fff8f6, #fff0f3);
+    border: 1px solid #f0d5dc;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(120, 35, 65, 0.08);
+}
+
+.pomelli-showcase-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.pomelli-showcase-heading h2 {
+    color: #8f244c;
+    font-family: Georgia, serif;
+    font-size: clamp(23px, 3vw, 34px);
+    margin-bottom: 10px;
+}
+
+.pomelli-showcase-heading p {
+    color: #765b61;
+    font-size: 15px;
+}
+
+.pomelli-campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.pomelli-campaign-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ead0d7;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(80, 30, 50, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pomelli-campaign-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(80, 30, 50, 0.14);
+}
+
+.pomelli-campaign-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 750px) {
+    .pomelli-campaign-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .pomelli-showcase {
+        width: 94%;
+        padding: 22px 12px;
+        margin: 28px auto;
+    }
+}
+
+
+
 </style>
 
 <link
@@ -4240,6 +4309,50 @@ background:
         <div class="hero-image-caption">Made with love, styled for you</div>
     </div>
 </section>
+
+
+<!-- POMELLI PREMIUM CAMPAIGN SHOWCASE -->
+<section class="pomelli-showcase" id="brand-campaigns">
+
+    <div class="pomelli-showcase-heading">
+        <h2>Discover the Art of Timeless Elegance</h2>
+        <p>Every creation tells a story. Every detail celebrates your individuality.</p>
+    </div>
+
+    <div class="pomelli-campaign-grid">
+
+        <article class="pomelli-campaign-card">
+            <img
+                src="images/pomelli/every-thread-tells-your-story.png"
+                alt="Every Thread Tells Your Story - Traditional fashion"
+                loading="lazy">
+        </article>
+
+        <article class="pomelli-campaign-card">
+            <img
+                src="images/pomelli/mastery-tailored-detail.png"
+                alt="Mastery in Every Tailored Detail - Designer blouse"
+                loading="lazy">
+        </article>
+
+        <article class="pomelli-campaign-card">
+            <img
+                src="images/pomelli/sovereign-splendor-lehenga.png"
+                alt="Sovereign Splendor - Bespoke designer lehenga"
+                loading="lazy">
+        </article>
+
+        <article class="pomelli-campaign-card">
+            <img
+                src="images/pomelli/woven-traditions-festive-days.png"
+                alt="Woven Traditions for Festive Days"
+                loading="lazy">
+        </article>
+
+    </div>
+</section>
+<!-- END POMELLI PREMIUM CAMPAIGN SHOWCASE -->
+
 
 <div class="search-bar">
     <input type="text" id="productSearch" placeholder="🔍 Search Sarees, Dresses, Lehengas, Kurtis..." onkeyup="searchProducts()">
